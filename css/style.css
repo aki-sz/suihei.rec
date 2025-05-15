@@ -7,6 +7,7 @@ body {
 /	background-color: yellow;
 	box-sizing: border-box;
 	height: 100vh;
+	overflow: scroll;
 }
 header {
 	background: white;
