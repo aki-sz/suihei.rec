@@ -57,6 +57,7 @@ header nav ul li a:hover {
 #header_ico {
 	display: flex;
 	width: 9%;
+	min-width: 100px;
 	margin-right: 10%;
 }
 .sns_icon {
