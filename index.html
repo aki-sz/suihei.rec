@@ -2,44 +2,100 @@
 <html lang="ja">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="description" content="Suihei Records">
-	<meta name="keywords" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Suihei Records</title>
-	<link href="css/reset.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="description" content="Suihei Records">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Suihei Records</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-	<div id="container">
-		<header>
-			<!--a class="logo" href="index.html"><img src="images/sui_logo.jpg"></a-->
-			<a class="header_image" href="index.html"><img src="images/sui_header_2.png" alt="Suihei Record"></a>
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="releases.html">Releases</a></li>
-					<li><a href="events.html">Events</a></li>
-					<li><a href="concept.html">Concept</a></li>
-				</ul>
-			</nav>
-			<div id="header_ico">
-				<a class="sns_icon" href="https://suiheirecords.bandcamp.com/"><img src="images/ico_bc.png"></a>
-				<a class="sns_icon" href="https://soundcloud.com/suiheirec"><img src="images/ico_sc.png"></a>
-				<a class="sns_icon" href="https://x.com/SuiheiRec"><img src="images/ico_x_2.png"></a>
-			</div>
-		</header>
-		<main id="main_home">
-			<p id="top_graphic"><img src="images/sui_header_bl.jpg"></p>
-		</main>
-		<footer>
-			<p>&copy;Suihei Records 2025</p>
-		</footer>
-	</div> <!--container-->
+    <div class="container layout-home">
+        <header>
+            <div id="header_contents">
+                <!--a class="logo" href="index.html"><img src="images/sui_logo.jpg"></a-->
+                <a class="header_image" href="index.html"><img src="images/sui_header_2.png" alt="Suihei Record"></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="releases.html">Releases</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="concept.html">Concept</a></li>
+                    </ul>
+                </nav>
+                <div id="header_ico">
+                    <a class="sns_icon" href="https://suiheirecords.bandcamp.com/"><img src="images/ico_bc.png"></a>
+                    <a class="sns_icon" href="https://soundcloud.com/suiheirec"><img src="images/ico_sc.png"></a>
+                    <a class="sns_icon" href="https://x.com/SuiheiRec"><img src="images/ico_x_2.png"></a>
+                </div>
+            </div>
+        </header>
+        <main id="main_home">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="sui004.html">
+                            <img src="images/releases/SUI004_cover.jpg" alt="SUI004 - Higher">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="sui003.html">
+                            <img src="images/releases/SUI003_cover.jpg" alt="SUI003 - Märchen">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="sui002.html">
+                            <img src="images/releases/SUI002_cover.jpg" alt="SUI002 - Hallucination from the womb">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="sui001.html">
+                            <img src="images/releases/SUI001_cover.jpg" alt="SUI001 - rough-textured parallel universe">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy;Suihei Records 2026</p>
+        </footer>
+    </div> <!--container-->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            effect: 'fade',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoHeight: false,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            speed: 500,
+            autoplay: false,
+            freeMode: true,
+            freeModeMomentum: false,
+        });
+    </script>
 </body>
 
 </html>

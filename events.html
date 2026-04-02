@@ -12,6 +12,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" defer
@@ -19,22 +20,24 @@
 </head>
 
 <body>
-	<div id="container">
+	<div class="container">
 		<header>
-			<!--a class="logo" href="index.html"><img src="images/sui_logo.jpg"></a-->
-			<a class="header_image" href="index.html"><img src="images/sui_header_2.png" alt="Suihei Record"></a>
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="releases.html">Releases</a></li>
-					<li><a href="events.html">Events</a></li>
-					<li><a href="concept.html">Concept</a></li>
-				</ul>
-			</nav>
-			<div id="header_ico">
-				<a class="sns_icon" href="https://suiheirecords.bandcamp.com/"><img src="images/ico_bc.png"></a>
-				<a class="sns_icon" href="https://soundcloud.com/suiheirec"><img src="images/ico_sc.png"></a>
-				<a class="sns_icon" href="https://x.com/SuiheiRec"><img src="images/ico_x_2.png"></a>
+			<div id="header_contents">
+				<!--a class="logo" href="index.html"><img src="images/sui_logo.jpg"></a-->
+				<a class="header_image" href="index.html"><img src="images/sui_header_2.png" alt="Suihei Record"></a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="releases.html">Releases</a></li>
+						<li><a href="events.html">Events</a></li>
+						<li><a href="concept.html">Concept</a></li>
+					</ul>
+				</nav>
+				<div id="header_ico">
+					<a class="sns_icon" href="https://suiheirecords.bandcamp.com/"><img src="images/ico_bc.png"></a>
+					<a class="sns_icon" href="https://soundcloud.com/suiheirec"><img src="images/ico_sc.png"></a>
+					<a class="sns_icon" href="https://x.com/SuiheiRec"><img src="images/ico_x_2.png"></a>
+				</div>
 			</div>
 		</header>
 		<div id="midashi">
@@ -42,17 +45,29 @@
 		</div>
 		<main id="main_events">
 			<h2 id="extra_midashi">Former Events</h2>
-			<ul>
-				<li>
-					<p class="artwork_events"><a href="images/lateral_thinking.jpeg" data-lightbox="group"><img
-								src="images/lateral_thinking.jpeg" alt="" width="300"></a></p>
-					<h2 class="events_info">LATERAL THINKING</h2>
-					<p class="events_date"><small>2023/08/12, SPREAD</small></p>
-				</li>
-			</ul>
+			<div id="former_events">
+				<ul>
+					<li>
+						<p class="artwork_events"><a href="images/events/mtc x lateral thinking.jpg"
+								data-lightbox="group"><img src="images/events/mtc x lateral thinking.jpg" alt=""
+									width="300"></a></p>
+						<h2 class="events_info">LATERAL THINKING</h2>
+						<p class="events_date"><small>2025/07/27, SPREAD</small></p>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<p class="artwork_events"><a href="images/events/lateral_thinking.jpeg"
+								data-lightbox="group"><img src="images/events/lateral_thinking.jpeg" alt=""
+									width="300"></a></p>
+						<h2 class="events_info">LATERAL THINKING</h2>
+						<p class="events_date"><small>2023/08/12, SPREAD</small></p>
+					</li>
+				</ul>
+			</div>
 		</main>
 		<footer>
-			<p>&copy;Suihei Records 2025</p>
+			<p>&copy;Suihei Records 2026</p>
 		</footer>
 	</div> <!--container-->
 </body>
